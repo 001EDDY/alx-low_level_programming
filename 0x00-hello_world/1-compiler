@@ -1,4 +1,5 @@
 #!/bin/bash
-gcc -c $CFILE -o 1-compiler.o
+gcc -c $FILE -0 1-compiler.0
+
 
 
