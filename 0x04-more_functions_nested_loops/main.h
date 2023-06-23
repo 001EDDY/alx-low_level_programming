@@ -1,4 +1,4 @@
-#include <stddef.h>
+#include <stdio.h>
 
 int _isupper(int c);
 
@@ -21,5 +21,3 @@ int _isupper(int c);
  void print_triangle(int size);
 
  void print_number(int n);
-
- endif
