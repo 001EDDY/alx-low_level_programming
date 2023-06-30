@@ -2,24 +2,25 @@
 #include <string.h>
 
 /**
- * _leet - Encodes a string into 1337
- *
- *
+ *leet - Encodes a string into 1337
+ *@n: input value
+ *Return: n value
  */
-char *leet(char *str)
+char *leet(char *n)
 {
-char *encoded = strdup(str);
-char *map[] = ["4", "3", "0", "7", "1"];
-char *letters[] = ["aA", "eE", "oO", "tT", "lL"];
-int numMappings = sizeof(map) / sizeof(map[0]);
-for (int i = 0; encoded[i] != '\0'; i++)
+int i,j;
+char s1[] = "aAeEoOtTlL";
+char s2[] = "4433007711";
+
+for (i = 0; n[i] != '\0'; i++)
 {
-for (int j = 0; j < numMappings; j++)
+for (j = 0; j < 10; j++)
 {
-if (strchr(letters[j], encoded[i]) != NULL)
+if (n[i] == s1[j])
 {
-encoded[i] = map[j][0];
-break;
+n[i] = s2[j];
 }
 }
+}
+return (n);
 }
