@@ -14,4 +14,5 @@ if (d->name == NULL)
 	d->name = "(nll)";
 if (d->owner == NULL)
 d->owner = "(nll)";
-printf("Name: %s\nAge:
+printf("Name: %s\nAge: %f\nOwner: %s\n", d->name, d->age, d->owner);
+}
